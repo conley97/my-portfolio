@@ -1,1 +1,25 @@
-<p>projects works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.component.css"> <!-- Link your CSS file -->
+</head>
+<body>
+
+<div class="project-container">
+    <div *ngFor="let project of projects" class="project">
+      <div class="image-container">
+        <img [src]="project.image" alt="{{ project.title }} Image">
+      </div>
+      <div class="description-container">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+        <a [href]="project.githubLink" target="_blank" class="github-button">GitHub Repository</a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

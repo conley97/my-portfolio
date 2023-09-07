@@ -1,0 +1,64 @@
+.project-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px; /* Adjust this value to your desired width limit */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.project {
+  display: flex;
+  margin: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  max-width: 100%; /* Limit the project width to the container's width */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.image-container {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 50%; /* Limit the image width within the project */
+}
+
+img {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  height: auto;
+}
+
+.description-container {
+  flex: 2;
+  max-width: 70%; /* Limit the description width within the project */
+}
+
+.github-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0366d6;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #0552e3;
+}
